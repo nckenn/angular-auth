@@ -1422,6 +1422,20 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@ngneat/hot-toast@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@ngneat/hot-toast/-/hot-toast-5.0.2.tgz#71ae481eaae71ee4555269d7c16dfd6bb6bee205"
+  integrity sha512-gtPGDq9o++0TOTWJT62HSyBpwc6jWnLb+kCo5kwteDefiM2LdLACTONV9fBXK/eWp1NKsHW1FU+2ENrOoq56WQ==
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngneat/overview@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@ngneat/overview/-/overview-5.1.1.tgz#0b7ff659c62078153dce0a300d47c65a233e0828"
+  integrity sha512-Dz7yylhS08Mo+A8SXo7KyJBJMxD18Oq/G5v/ndvd5C8Gi3uOrAiXUjxvqRCPMxrg03FlkvEsD5/4TvMKtrUfAQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@16.1.8":
   version "16.1.8"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-16.1.8.tgz#61e12e4a70101333c9689755c8d47673ca987bfc"
@@ -4436,6 +4450,13 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+ngx-permissions@^15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-permissions/-/ngx-permissions-15.0.1.tgz#367b4d14bbdc943c1362fcd4a4f015c981d9203e"
+  integrity sha512-GjPF54B0DYtzqVb95YUh1XZivU4ilpCnx04gtADnIz4grihb/AtVwGwjgeeC1N/zrwUaZWLxTkIm5emN11JlDw==
+  dependencies:
+    tslib "^2.1.0"
+
 nice-napi@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nice-napi/-/nice-napi-1.0.2.tgz#dc0ab5a1eac20ce548802fc5686eaa6bc654927b"
@@ -5934,7 +5955,7 @@ tslib@2.5.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.5.3.tgz#24944ba2d990940e6e982c4bea147aba80209913"
   integrity sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==
 
-tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
   integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
