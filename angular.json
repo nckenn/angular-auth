@@ -70,6 +70,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-auth:build",
+            "proxyConfig": "proxy.config.js"
+          },
           "configurations": {
             "production": {
               "browserTarget": "angular-auth:build:production"
@@ -107,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1819a389-1089-4732-8970-c918880c3ddf"
   }
 }

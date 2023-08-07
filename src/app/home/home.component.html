@@ -1,0 +1,51 @@
+<div class="container grid items-center gap-6 pb-8 pt-6">
+  <h1 class="text-2xl font-normal">Welcome, {{ user.displayName }}</h1>
+  <ng-container *ngIf="countries$ | async as countries">
+    <app-tree-view [treeData]="countries">
+      <ng-template let-item>
+        <button
+          type="button"
+          class="text-white bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+          (click)="toggleTreeItem(item)"
+          *ngIf="item.children?.length > 0"
+        >
+          <ng-container *ngIf="item.expanded; else notExpanded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 23  23 "
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M18 12H6"
+              />
+            </svg>
+          </ng-container>
+          <ng-template #notExpanded>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 23  23 "
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v12m6-6H6"
+              />
+            </svg>
+          </ng-template>
+        </button>
+        <span>
+          {{ item.name }}
+        </span>
+      </ng-template>
+    </app-tree-view>
+  </ng-container>
+</div>
